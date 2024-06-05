@@ -1,0 +1,245 @@
+vrun [str]
+Run UE4 built-in commands
+
+vget /objects
+Get the name of all objects
+
+vset /objects/spawn_cube
+Spawn a box in the scene for debugging purpose.
+
+vset /objects/spawn_cube [str]
+Spawn a box in the scene for debugging purpose, with optional argument name.
+
+vset /objects/spawn [str]
+Spawn an object with UClassName as the argument.
+
+vset /objects/spawn [str] [str]
+Spawn an object with UClassName as the argument.
+
+vget /object/[str]/location
+Get object location [x, y, z]
+
+vset /object/[str]/location [float] [float] [float]
+Set object location [x, y, z]
+
+vget /object/[str]/rotation
+Get object rotation [pitch, yaw, roll]
+
+vset /object/[str]/rotation [float] [float] [float]
+Set object rotation [pitch, yaw, roll]
+
+vget /object/[str]/vertex_location
+Get vertex location
+
+vget /object/[str]/color
+Get the labeling color of an object (used in object instance mask)
+
+vset /object/[str]/color [uint] [uint] [uint]
+Set the labeling color of an object [r, g, b]
+
+vget /object/[str]/mobility
+Is the object static or movable?
+
+vset /object/[str]/show
+Show object
+
+vset /object/[str]/hide
+Hide object
+
+vset /object/[str]/destroy
+Destroy object
+
+vget /object/[str]/uclass_name
+Get the UClass name for filtering objects
+
+vset /object/[str]/name [str]
+Set the name of the object
+
+vget /object/[str]/label
+Get actor label
+
+vset /object/[str]/label [str]
+Set actor label
+
+vget /object/[str]/scale
+Get object rotation [x, y, z]
+
+vset /object/[str]/scale [float] [float] [float]
+Set object scale [x, y, z]
+
+vget /object/[str]/bounds
+Return the bounds in the world coordinate, formate is [minx, y, z, maxx, y, z]
+
+vget /unrealcv/status
+Get the status of UnrealCV plugin
+
+vget /unrealcv/help
+List all available commands and their help message
+
+vget /unrealcv/echo [str]
+[debug] Echo back all message, for debug
+
+vget /unrealcv/version
+Get the version of UnrealCV, the format is v0.*.*
+
+vget /scene/name
+Get the name of this scene, to make sure the annotation data is for this scene.
+
+vget /level/name
+Get current level name
+
+vset /action/game/pause
+Pause the game
+
+vset /action/game/resume
+Resume the game
+
+vget /action/game/is_paused
+Get the pause status
+
+vset /action/game/level [str]
+Open level
+
+vset /action/input/enable
+Enable input
+
+vset /action/input/disable
+Disable input
+
+vset /action/eyes_distance [float]
+Set the distance of binocular stereo camera
+
+vset /action/keyboard [str] [float]
+Send a keyboard action to the game
+
+vrun [str] [str]
+Run UE4 built-in commands
+
+vrun [str] [str] [str]
+Run UE4 built-in commands
+
+vrun [str] [str] [str] [str]
+Run UE4 built-in commands
+
+vrun [str] [str] [str] [str] [str]
+Run UE4 built-in commands
+
+vrun [str] [str] [str] [str] [str] [str]
+Run UE4 built-in commands
+
+vexec [str] [str]
+Run UE4 blueprint function
+
+vexec [str] [str] [str]
+Run UE4 blueprint function
+
+vexec [str] [str] [str] [str]
+Run UE4 blueprint function
+
+vexec [str] [str] [str] [str] [str]
+Run UE4 blueprint function
+
+vexec [str] [str] [str] [str] [str] [str]
+Run UE4 blueprint function
+
+vexec [str] [str] [str] [str] [str] [str] [str]
+Run UE4 blueprint function
+
+vbp [str] [str]
+Run UE4 blueprint function
+
+vbp [str] [str] [str]
+Run UE4 blueprint function
+
+vbp [str] [str] [str] [str]
+Run UE4 blueprint function
+
+vbp [str] [str] [str] [str] [str]
+Run UE4 blueprint function
+
+vbp [str] [str] [str] [str] [str] [str]
+Run UE4 blueprint function
+
+vbp [str] [str] [str] [str] [str] [str] [str]
+Run UE4 blueprint function
+
+vbp [str] [str] [str] [str] [str] [str] [str] [str]
+Run UE4 blueprint function
+
+vbp [str] [str] [str] [str] [str] [str] [str] [str] [str]
+Run UE4 blueprint function
+
+vbp [str] [str] [str] [str] [str] [str] [str] [str] [str] [str]
+Run UE4 blueprint function
+
+vbp [str] [str] [str] [str] [str] [str] [str] [str] [str] [str] [str]
+Run UE4 blueprint function
+
+vget /persistent_level/id
+Get persistent level id, so that we can call BP function defined in it
+
+vget /persistent_level/level_script_actor/id
+Get persistent level id, so that we can call BP function defined in it
+
+vget /screenshot [str]
+Get screenshot
+
+vget /cameras
+List all sensors in the scene
+
+vset /cameras/spawn
+Spawn a new camera actor in the scene
+
+vget /camera/[uint]/location
+Get sensor location in world space
+
+vset /camera/[uint]/location [float] [float] [float]
+Set sensor to location [x, y, z]
+
+vset /camera/[uint]/moveto [float] [float] [float]
+Move camera to location [x, y, z], will be blocked by objects
+
+vget /camera/[uint]/rotation
+Get sensor rotation in world space
+
+vset /camera/[uint]/rotation [float] [float] [float]
+Set rotation [pitch, yaw, roll] of camera [id]
+
+vget /camera/[uint]/lit [str]
+Get png binary data from lit sensor
+
+vget /camera/[uint]/depth [str]
+Get npy binary data from depth sensor
+
+vget /camera/[uint]/normal [str]
+Get npy binary data from surface normal sensor
+
+vget /camera/[uint]/object_mask [str]
+Get npy binary data from depth sensor
+
+vget /camera/[uint]/seg [str]
+Get npy binary data from depth sensor
+
+vset /viewmode [str]
+Set ViewMode to (lit, normal, depth, object_mask)
+
+vget /viewmode
+Get current ViewMode
+
+vget /camera/[uint]/fov
+Get FOV
+
+vset /camera/[uint]/fov [float]
+Set FOV
+
+vset /camera/[uint]/size [uint] [uint]
+Set Camera Film Size
+
+vget /camera/[uint]/size
+Get Camera Film Size
+
+vset /camera/[uint]/ortho_width [float]
+Set ortho width of the camera
+
+vset /camera/[uint]/projection_type [str]
+Set camera projection type
