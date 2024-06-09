@@ -11,7 +11,7 @@ Download and install Unreal Engine from the [official website](https://www.unrea
 UnrealCV is divided in two parts: the Unreal Engine plugin and the Python client. The Unreal Engine plugin is a server embedded in the game, and the UnrealCV client sends commands to the server to control the game and receive images.
 
 <figure>
-    <img src="pipeline.png"
+    <img src="./imgs/pipeline.png"
          alt="Albuquerque, New Mexico">
     <figcaption>Architecture of UnrealCV.</figcaption>
 </figure>
